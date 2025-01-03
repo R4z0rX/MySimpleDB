@@ -19,6 +19,10 @@ const Database = require("../lib/mysimpledb");
     // List all keys
     const keys = await db.list();
     console.log("List of keys:", keys);
+    
+    // Get the database size
+    const size = await db.size();
+    console.log("Database size:", size);
 
     // Delete a key
     const deleteResult = await db.delete("age");

@@ -1,10 +1,11 @@
 # mysimpledb
 
-A lightweight, JSON-based database module for Node.js.
+A lightweight, JSON-based database module for Node.js
 
 ## Features
 * Get, set, delete, list keys
-* Backup and clear database
+* Get size
+* Clear database
 
 ## Installation
 

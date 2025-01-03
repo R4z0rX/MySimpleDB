@@ -3,7 +3,7 @@ const fs = require("fs/promises");
 const path = require("path");
 
 (async () => {
-    const dbFileName = "testdb.json";
+    const dbFileName = "testdb2.json";
     const db = new Database(dbFileName);
 
     // Set some key-value pairs
@@ -22,7 +22,11 @@ const path = require("path");
     // List all keys
     const keys = await db.list();
     console.log("List of keys:", keys);
-
+    
+    // Get the database size
+    const size = await db.size();
+    console.log("Database size:", size);
+    
     // Delete a key
     const deleteResult = await db.delete("age");
     console.log("Delete 'age':", deleteResult);

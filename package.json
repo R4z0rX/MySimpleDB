@@ -7,8 +7,13 @@
     "lib": "lib",
     "test": "test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/R4z0rX/MySimpleDB.git"
+  },
   "scripts": {
-    "test": "node test/example1.js"
+    "test": "node test/example1.js",
+    "test2": "node test/example2.js"
   },
   "keywords": [
     "database",
