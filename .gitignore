@@ -128,3 +128,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+testdb.json
+testdb2.json
+testdb2_backup.json

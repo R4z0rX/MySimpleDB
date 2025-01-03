@@ -5,6 +5,10 @@ const path = require("path");
 (async () => {
     const dbFileName = "testdb2.json";
     const db = new Database(dbFileName);
+    
+    // Get the database size
+    let size = await db.size();
+    console.log("Database size:", size);
 
     // Set some key-value pairs
     await db.set("name", "Alice");
@@ -24,7 +28,7 @@ const path = require("path");
     console.log("List of keys:", keys);
     
     // Get the database size
-    const size = await db.size();
+    size = await db.size();
     console.log("Database size:", size);
     
     // Delete a key
@@ -34,6 +38,10 @@ const path = require("path");
     // Attempt to delete a non-existent key
     const deleteNonExistent = await db.delete("nonExistentKey");
     console.log("Delete 'nonExistentKey':", deleteNonExistent);
+    
+    // Get the database size
+    size = await db.size();
+    console.log("Database size:", size);
 
     // Get all records
     const allRecords = await db.getAll();
@@ -47,7 +55,11 @@ const path = require("path");
     // Clear the database
     await db.empty();
     console.log("Database cleared.");
-
+    
+    // Get the database size
+    size = await db.size();
+    console.log("Database size:", size);
+    
     // Verify the database is empty
     const emptyRecords = await db.getAll();
     console.log("All records after clearing:", emptyRecords);
