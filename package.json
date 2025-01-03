@@ -1,0 +1,20 @@
+{
+  "name": "mysimpledb",
+  "version": "1.0.0",
+  "description": "A simple JSON-based database for Node.js",
+  "main": "lib/mysimpledb.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/example1.js"
+  },
+  "keywords": [
+    "database",
+    "json",
+    "nodejs"
+  ],
+  "author": "RazrCraft",
+  "license": "MIT"
+}
