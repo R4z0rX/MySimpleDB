@@ -13,7 +13,10 @@
   },
   "scripts": {
     "test": "node test/example1.js",
-    "test2": "node test/example2.js"
+    "test2": "node test/example2.js",
+    "test:path_traversal": "node test/path_traversal.js",
+    "test:encryption": "node test/encryption.js",
+    "test:all": "npm run test:path_traversal && npm run test:encryption"
   },
   "keywords": [
     "database",
